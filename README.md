@@ -2,7 +2,7 @@
 
 In this project you will be making a webpage called **The 10 best selling video games of all time**
 
-In the included `app.js` file you will find an object array containing all the information you need to build the site. You can use normal HTML to outline the page structure, containers, etc, but all the game info content should be generated using the included object array. Each game has to use _all_ the data in the object. Note the included logos folder and the associated `logo` key on the objects. You choose the layout, but some suggestions are:
+In the included `app.js` file you will find an object array containing all the information you need to build the site content. You can use normal HTML to outline the page structure, containers, etc, but all the game info content should be generated using the included object array. Each game has to use _all_ the data in the object. Note the included logos folder and the associated `logo` key on the objects. You choose the layout, but some suggestions are:
 
 - Using a list
 - Display each game as a card
