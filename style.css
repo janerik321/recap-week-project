@@ -1,101 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  margin: 1em 0em;
+}
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    background-image: url(images/brian-j-tromp-Y50rsCtcS_8-unsplash.jpg);
-    background-attachment: fixed;
-    background-size: cover
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/brian-j-tromp-Y50rsCtcS_8-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #top-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
 
 .card {
-   display: flex;
-   background-color: hsla(0, 0%, 100%, 80%);
-   border-radius: 10px;
-   box-sizing: border-box;
-   box-shadow: 0 5 8 rgba(0, 0, 0, 0.1);
-   padding: 20px;
-   align-items: center;
-   /* border: 2px solid purple;  */
-   
-    }
+  display: flex;
+  background-color: hsla(0, 0%, 100%, 80%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 5 8 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  align-items: center;
+  /* border: 2px solid purple;  */
+}
 
-    /* Styling of the game image */
+/* Styling of the game image */
 .game-image {
-    width: 250px;
-    border-radius: 10px;
-    /* margin-bottom: 15px; */
-    /* border: 2px solid red; */
-    }
+  width: 250px;
+  border-radius: 10px;
+  /* margin-bottom: 15px; */
+  /* border: 2px solid red; */
+}
 
-    /* Title if the game */
+/* Title if the game */
 .card h2 {
-    font-size: 1.5rem;
-    color: rgb(158, 0, 0);
-    margin: 10px 0;
-    padding: 20px;
-    /* border: 2px solid yellow; */
-    /* border: 2px solid red; */
-    }
+  font-size: 1.5rem;
+  color: rgb(158, 0, 0);
+  margin: 10px 0;
+  padding: 20px;
+  /* border: 2px solid yellow; */
+  /* border: 2px solid red; */
+}
 
-    /* Year of release */
+/* Year of release */
 .card h3 {
-    font-size: 1.3rem;
-    color: rgb(82, 48, 48);
-    margin: 10px 0;
-    padding: 20px;
-    /* border: 2px solid turquoise */
+  font-size: 1.3rem;
+  color: rgb(82, 48, 48);
+  margin: 10px 0;
+  padding: 20px;
+  /* border: 2px solid turquoise */
 }
 
-    /* Developer of the card */
+/* Developer of the card */
 .card h4 {
-    font-size: 1.1rem;
-    color: rgb(196, 7, 1);
-    margin: 10px 0px;
-    padding: 0px 20px ;
-    /* border: 2px solid blue; */
+  font-size: 1.1rem;
+  color: rgb(196, 7, 1);
+  margin: 10px 0px;
+  padding: 0px 20px;
+  /* border: 2px solid blue; */
 }
 
-    /* Categories and platforms */
+/* Categories and platforms */
 .card h5 {
-    font-size: 1.0rem;
-    color: black;
-    padding: 0px 20px;
-    /* margin: 10px; */
-    /* border: 2px solid green; */
+  font-size: 1rem;
+  color: black;
+  padding: 0px 20px;
+  /* margin: 10px; */
+  /* border: 2px solid green; */
 }
 
-    /* Description of the card */
+/* Description of the card */
 .card p {
-    /* border: 2px solid red; */
-    line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin-top: 10px;
-    padding: 20px;
+  /* border: 2px solid red; */
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 555px) {
-    .card {
+  .card {
     flex-direction: column;
-}
-    .game-image {
-        width: 100px;
-    }
+  }
+  .game-image {
+    width: 100px;
+  }
 }
