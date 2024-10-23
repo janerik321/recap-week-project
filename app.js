@@ -135,7 +135,7 @@ for (let game of topSellers) {
   developer.textContent = game.developer;
 
   const category = document.createElement("h4");
-  category.textContent = game.categories;
+  category.textContent = game.categories.join(", ");
 
   const description = document.createElement("p");
   description.textContent = game.description;
