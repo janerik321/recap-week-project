@@ -109,3 +109,48 @@ const topSellers = [
     logo: "mario-kart-logo.jpg",
   },
 ];
+
+const topList = document.querySelector("#top-list");
+topList.style.display = "flex";
+topList.style.flexDirection = "column";
+topList.style.gap = "1em";
+
+for (let game of topSellers) {
+  const gameCard = document.createElement("div");
+  gameCard.classList.add("card");
+  gameCard.style.border = "1px solid black";
+  gameCard.style.padding = "1em";
+
+  const image = document.createElement("img");
+  image.classList.add("gameImage");
+  image.src = `/logos/${game.logo}`;
+
+  const title = document.createElement("h2");
+  title.textContent = game.title;
+
+  const year = document.createElement("h4");
+  year.textContent = game.releaseYear;
+
+  const developer = document.createElement("h4");
+  developer.textContent = game.developer;
+
+  const category = document.createElement("h4");
+  category.textContent = game.categories;
+
+  const description = document.createElement("p");
+  description.textContent = game.description;
+
+  const platforms = document.createElement("h4");
+  platforms.textContent = game.platforms;
+
+  gameCard.append(
+    image,
+    title,
+    year,
+    developer,
+    category,
+    description,
+    platforms
+  );
+  topList.append(gameCard);
+}
