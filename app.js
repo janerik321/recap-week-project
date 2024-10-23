@@ -111,46 +111,36 @@ const topSellers = [
 ];
 
 const topList = document.querySelector("#top-list");
-topList.style.display = "flex";
-topList.style.flexDirection = "column";
-topList.style.gap = "1em";
 
 for (let game of topSellers) {
   const gameCard = document.createElement("div");
   gameCard.classList.add("card");
-  gameCard.style.border = "1px solid black";
-  gameCard.style.padding = "1em";
 
   const image = document.createElement("img");
-  image.classList.add("gameImage");
+  image.classList.add("game-image");
   image.src = `/logos/${game.logo}`;
+
+  const box = document.createElement("div");
 
   const title = document.createElement("h2");
   title.textContent = game.title;
 
-  const year = document.createElement("h4");
-  year.textContent = game.releaseYear;
+  const year = document.createElement("h3");
 
   const developer = document.createElement("h4");
-  developer.textContent = game.developer;
+  developer.textContent = `${game.releaseYear} ${game.developer}`;
 
-  const category = document.createElement("h4");
+  const category = document.createElement("h5");
   category.textContent = game.categories.join(", ");
 
   const description = document.createElement("p");
   description.textContent = game.description;
 
-  const platforms = document.createElement("h4");
-  platforms.textContent = game.platforms;
+  const platforms = document.createElement("h5");
+  platforms.textContent = game.platforms.join(", ");
 
-  gameCard.append(
-    image,
-    title,
-    year,
-    developer,
-    category,
-    description,
-    platforms
-  );
+  box.append(title, developer, category, description, platforms);
+
+  gameCard.append(image, box);
   topList.append(gameCard);
 }
