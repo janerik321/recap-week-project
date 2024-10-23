@@ -118,7 +118,6 @@ for (let game of topSellers) {
   gameCard.classList.add("card");
   
 
-
   const image = document.createElement("img");
   image.classList.add("game-image");
   image.src = `/logos/${game.logo}`;
@@ -131,7 +130,6 @@ for (let game of topSellers) {
 
   const year = document.createElement("h3");
   
-
   const developer = document.createElement("h4");
   developer.textContent = `${game.releaseYear} ${game.developer}`;
 
@@ -145,14 +143,12 @@ for (let game of topSellers) {
   platforms.textContent = game.platforms.join(", ");
 
   box.append(  
-    title,
-  
+    title,  
     developer,
     category,
     description,
-    platforms
-  );
-  gameCard.append(
-    image, box)
-  topList.append(gameCard);
+    platforms);
+  
+    gameCard.append(image, box)
+    topList.append(gameCard);
 }
