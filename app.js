@@ -109,3 +109,13 @@ const topSellers = [
     logo: "mario-kart-logo.jpg",
   },
 ];
+
+
+const cards = document.getElementById("cards")
+// create element
+const title = document.createElement("developer")
+
+// Append the element to the #title div
+cards.appendChild(title)
+
+const
