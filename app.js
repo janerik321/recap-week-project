@@ -110,12 +110,49 @@ const topSellers = [
   },
 ];
 
+const topList = document.querySelector("#top-list");
 
-const cards = document.getElementById("cards")
-// create element
-const title = document.createElement("developer")
 
-// Append the element to the #title div
-cards.appendChild(title)
+for (let game of topSellers) {
+  const gameCard = document.createElement("div");
+  gameCard.classList.add("card");
+  
 
-const
+
+  const image = document.createElement("img");
+  image.classList.add("game-image");
+  image.src = `/logos/${game.logo}`;
+
+  const box = document.createElement("div")
+
+
+  const title = document.createElement("h2");
+  title.textContent = game.title;
+
+  const year = document.createElement("h3");
+  
+
+  const developer = document.createElement("h4");
+  developer.textContent = `${game.releaseYear} ${game.developer}`;
+
+  const category = document.createElement("h5");
+  category.textContent = game.categories.join(", ");
+
+  const description = document.createElement("p");
+  description.textContent = game.description;
+
+  const platforms = document.createElement("h5");
+  platforms.textContent = game.platforms.join(", ");
+
+  box.append(  
+    title,
+  
+    developer,
+    category,
+    description,
+    platforms
+  );
+  gameCard.append(
+    image, box)
+  topList.append(gameCard);
+}
