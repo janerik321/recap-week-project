@@ -13,6 +13,7 @@ body {
     background-size: cover
 }
 
+/* Styling the list container (#top-list) */
 #top-list {
     display: flex;
     flex-direction: column;
@@ -24,26 +25,34 @@ body {
     max-width: 800px;
     }
 
+    /* Styling each game card */
 .card {
    display: flex;
    background-color: hsla(0, 0%, 100%, 80%);
    border-radius: 10px;
    box-sizing: border-box;
-   box-shadow: 0 5 8 rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
    padding: 20px;
    align-items: center;
-   /* border: 2px solid purple;  */
    
-    }
+   /* border: 2px solid purple;  */
+   }
+   
 
     /* Styling of the game image */
 .game-image {
     width: 250px;
+    box-shadow: darkblue 0px 10px 20px -10px;
     border-radius: 10px;
+    transition: ease-in-out 0.5s;
     /* margin-bottom: 15px; */
     /* border: 2px solid red; */
     }
 
+
+.game-image:hover {
+    transform: scale(1.1);
+}
     /* Title if the game */
 .card h2 {
     font-size: 1.5rem;

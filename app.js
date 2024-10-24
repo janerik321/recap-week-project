@@ -124,7 +124,6 @@ for (let game of topSellers) {
 
   const box = document.createElement("div")
 
-
   const title = document.createElement("h2");
   title.textContent = game.title;
 
