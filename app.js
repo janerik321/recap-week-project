@@ -112,23 +112,22 @@ const topSellers = [
 
 const topList = document.querySelector("#top-list");
 
-
 for (let game of topSellers) {
   const gameCard = document.createElement("div");
   gameCard.classList.add("card");
-  
 
   const image = document.createElement("img");
   image.classList.add("game-image");
-  image.src = `/logos/${game.logo}`;
+  image.src = `./logos/${game.logo}`;
 
-  const box = document.createElement("div")
+  const box = document.createElement("div");
+  box.classList.add("text-box")
 
   const title = document.createElement("h2");
   title.textContent = game.title;
 
   const year = document.createElement("h3");
-  
+
   const developer = document.createElement("h4");
   developer.textContent = `${game.releaseYear} ${game.developer}`;
 
@@ -140,14 +139,10 @@ for (let game of topSellers) {
 
   const platforms = document.createElement("h5");
   platforms.textContent = game.platforms.join(", ");
+  platforms.classList.add("italics");
 
-  box.append(  
-    title,  
-    developer,
-    category,
-    description,
-    platforms);
-  
-    gameCard.append(image, box)
-    topList.append(gameCard);
+  box.append(title, developer, category, platforms, description, );
+
+  gameCard.append(image, box);
+  topList.append(gameCard);
 }
