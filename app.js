@@ -118,7 +118,7 @@ for (let game of topSellers) {
 
   const image = document.createElement("img");
   image.classList.add("game-image");
-  image.src = `/logos/${game.logo}`;
+  image.src = `./logos/${game.logo}`;
 
   const box = document.createElement("div");
 
