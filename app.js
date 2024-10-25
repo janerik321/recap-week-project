@@ -126,8 +126,6 @@ for (let game of topSellers) {
   const title = document.createElement("h2");
   title.textContent = game.title;
 
-  const year = document.createElement("h3");
-
   const developer = document.createElement("h4");
   developer.textContent = `${game.releaseYear} ${game.developer}`;
 

@@ -11,7 +11,6 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 4px black;
   margin: 1em 0em;
-
 }
 
 body {
@@ -27,25 +26,20 @@ body {
 #top-list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 20px;
   gap: 1em;
-  justify-content: center;
-  align-items: center;
   max-width: 800px;
-}
+ }
 
     /* Styling each game card */
 .card {
    display: flex;
    background-color: hsla(0, 0%, 100%, 80%); 
    border-radius: 10px;
-   box-sizing: border-box;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
    padding: 20px;
    align-items: center;   
-   /* border: 2px solid purple;  */
-}
+  }
    
 
 /* Styling of the game image */
@@ -56,7 +50,6 @@ body {
     transition: ease-in-out 0.5s;
 }
 
-
 .game-image:hover {
     transform: scale(1.1);
 }
@@ -66,13 +59,7 @@ body {
   color: rgb(1, 94, 3);
   }
 
-/* Year of release */
-.card h3 {
-  font-size: 1.3rem;
-  color: rgb(82, 48, 48);
-}
-
-/* Developer of the card */
+/* Year and Developer of the card */
 .card h4 {
   font-size: 1.1rem;
   color: rgb(196, 7, 1);
@@ -86,7 +73,6 @@ body {
 
 /* Description of the card */
 .card p {
-  /* border: 2px solid red; */
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
